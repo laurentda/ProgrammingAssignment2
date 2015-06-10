@@ -1,4 +1,4 @@
-pollutantmean <- function(directory, pollutant, id = 10:12){
+pollutantmean <- function(directory, pollutant, id = 1:332){
 	filepath <- paste("C:/Users/ephyto/Google Drive/R - coursera", directory, sep="/")
 	allfiles <- as.character(list.files(filepath))
 	specdatapath <- paste(filepath, allfiles, sep="/")
