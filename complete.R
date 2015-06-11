@@ -17,8 +17,9 @@ complete <- function(directory, id = 1:332) {
 		y <- y[complete.cases(y),]
 		nobs <- append(nobs, nrow(y))
 	}
-	dataset = cbind(xf, idx, nobs)
-	colnames(dataset) <- c("", "id", "nobs")
+	dataset = cbind(idx, nobs)
+	colnames(dataset) <- c("id", "nobs")
+	dataset <- data.frame(dataset)
 dataset
 	#print(idx)
 	#print(nobs)
